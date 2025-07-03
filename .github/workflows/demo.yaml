@@ -22,7 +22,7 @@ jobs:
         distribution: 'corretto'
         java-version: '11'
 
-    - name: List root contents (debug)
+    - name: List root contents
       run: ls -R
     
     - name: Build with Maven
