@@ -29,6 +29,9 @@ jobs:
       run: mvn clean install
       working-directory: sample/
 
+    - name: Check JAR exists
+    run: ls -l sample/target/*.jar
+
     - name: Upload Artifact
       uses: actions/upload-artifact@v4
       with:
