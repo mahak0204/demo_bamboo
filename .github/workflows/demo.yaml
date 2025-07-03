@@ -22,12 +22,6 @@ jobs:
         distribution: 'corretto'
         java-version: '11'
 
-    - name: Set up Maven
-      uses: actions/setup-java@v3
-      with:
-        distribution: 'maven'
-        maven-version: '3.9.6'
-
     - name: Build with Maven
       run: mvn clean install
       working-directory: sample/
